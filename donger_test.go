@@ -26,11 +26,11 @@ func (f fakeRandSource) Int63() int64 {
 
 func (f fakeRandSource) Seed(seed int64) {}
 
-func TestDongerRandomCat(t *testing.T) {
-	r := rand.New(fakeRandSource{})
+// func TestDongerRandomCat(t *testing.T) {
+//     r := rand.New(fakeRandSource{})
 
-	assert.Equal(t, tdc.randomCat(r), "c1")
-}
+//     assert.Equal(t, tdc.randomCat(r), "c1")
+// }
 
 func TestDongerRandom(t *testing.T) {
 	r := rand.New(fakeRandSource{})
